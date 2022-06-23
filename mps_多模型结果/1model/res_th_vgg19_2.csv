@@ -1,0 +1,40 @@
+g10b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,10,8,230715,233626,34.674815248250006,34,Avg request latency: 230715 usec (overhead 70 usec + queue 43 usec + compute input 476 usec + compute infer 1394 usec + compute output 228732 usec),Avg latency: 233626 usec (standard deviation 442 usec)
+ 
+g20b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,20,8,116859,119843,68.45856972933193,66,Avg request latency: 116859 usec (overhead 68 usec + queue 44 usec + compute input 474 usec + compute infer 1468 usec + compute output 114805 usec),Avg latency: 119843 usec (standard deviation 460 usec)
+ 
+g30b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,30,8,72101,75125,110.95546525013523,106,Avg request latency: 72101 usec (overhead 67 usec + queue 40 usec + compute input 473 usec + compute infer 1540 usec + compute output 69981 usec),Avg latency: 75125 usec (standard deviation 562 usec)
+ 
+g40b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,40,8,43638,46852,183.32645859113617,170,Avg request latency: 43638 usec (overhead 66 usec + queue 46 usec + compute input 473 usec + compute infer 1655 usec + compute output 41398 usec),Avg latency: 46852 usec (standard deviation 428 usec)
+ 
+g50b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,50,8,35972,39151,222.3951962637607,204,Avg request latency: 35972 usec (overhead 64 usec + queue 41 usec + compute input 471 usec + compute infer 1615 usec + compute output 33781 usec),Avg latency: 39151 usec (standard deviation 410 usec)
+ 
+g60b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,60,8,32126,35285,249.01948577476188,227,Avg request latency: 32126 usec (overhead 63 usec + queue 43 usec + compute input 472 usec + compute infer 1604 usec + compute output 29944 usec),Avg latency: 35285 usec (standard deviation 616 usec)
+ 
+g70b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,70,8,29943,33133,267.1742978325485,241,Avg request latency: 29943 usec (overhead 62 usec + queue 44 usec + compute input 473 usec + compute infer 1641 usec + compute output 27723 usec),Avg latency: 33133 usec (standard deviation 386 usec)
+ 
+g80b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,80,8,27659,30819,289.2367764561264,259,Avg request latency: 27659 usec (overhead 62 usec + queue 45 usec + compute input 473 usec + compute infer 1663 usec + compute output 25416 usec),Avg latency: 30819 usec (standard deviation 384 usec)
+ 
+g90b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,90,8,25133,28304,318.3066088409661,282,Avg request latency: 25133 usec (overhead 59 usec + queue 43 usec + compute input 473 usec + compute infer 1631 usec + compute output 22927 usec),Avg latency: 28304 usec (standard deviation 656 usec)
+ 
+g100b8
+ ,GPU allocated,batchsize,Server latency,Client latency,Cal_Throughput,Txt_Throughput,Detail Server latency,Detail Client latency
+vgg19,100,8,23133,26299,345.8263087364371,304,Avg request latency: 23133 usec (overhead 61 usec + queue 45 usec + compute input 472 usec + compute infer 1654 usec + compute output 20901 usec),Avg latency: 26299 usec (standard deviation 523 usec)
+ 
