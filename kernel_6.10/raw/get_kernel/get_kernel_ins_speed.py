@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-models = ["resnet50", "vgg19", "densenet201"]
+models = ["resnet50", "vgg19", "densenet201", "mobilenet"]
 batch = [1, 8, 16, 32]
 # batch = [1, 16, 32]
 gpu10_ins_speed_kernel_hash = collections.defaultdict(list)

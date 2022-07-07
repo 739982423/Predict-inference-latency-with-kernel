@@ -1,6 +1,6 @@
 import csv
 
-model_name = "densenet201"
+model_name = "mobilenet"
 gpu_allocated = [10, 25, 50, 75, 100]
 bs = [1, 8, 16, 32]
 

@@ -28,6 +28,25 @@ for file in file_name_list:
             tmp.append(row[355])
             tmp.append(row[363])
             tmp.append(row[18])
+            tmp.append(row[244])    # L1/TEX 读取L2 CACHE的数据量(mb)
+            tmp.append(row[246])    # L1/TEX 读取L2 CACHE数据的速度(gb/s)
+            tmp.append(row[229])    # L1/TEX 写入L2 CACHE的数据量(mb)
+            tmp.append(row[231])    # L1/TEX 写入L2 CACHE数据的速度(gb/s)
+            tmp.append(row[391])    # L1/TEX LOAD requests
+            tmp.append(row[393])    # L1/TEX STORE requests
+            tmp.append(row[387])    # L1/TEX LOAD requests + L1/TEX STORE requests
+            tmp.append(row[464])    # L1/TEX LOAD sectors
+            tmp.append(row[478])    # L1/TEX STORE sectors
+            tmp.append(row[408])    # lts__t_sectors_lookup_hit.sum
+            tmp.append(row[409])    # lts__t_sectors_lookup_miss.sum 这俩是计算Hit Rate的
+            tmp.append(row[466])    # L1/TEX LOAD Hit sectors sum
+            tmp.append(row[467])    # L1/TEX LOAD Miss sectors sum
+            tmp.append(row[191])    # Device memory LOAD sectors
+            tmp.append(row[192])    # Device memory STORE sectors
+            tmp.append(row[184])    # Percentage of peak device memory utilization(device memory loads)
+            tmp.append(row[187])    # Percentage of peak device memory utilization(device memory stores)
+            tmp.append(row[191])    # l2从device dram load了多少sector
+            tmp.append(row[192])    # l2向device dram write了多少sector
             res.append(tmp)
 
     with open(res_file_name, mode="w", encoding="utf-8-sig", newline="") as f:

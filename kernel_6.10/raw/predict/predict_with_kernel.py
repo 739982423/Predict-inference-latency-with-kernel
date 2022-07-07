@@ -21,8 +21,8 @@ def get_number(s):
     return res
 
 # profile_res_csv = "filtered_raw_resnet50_b8_g10.csv"
-model_name = "resnet50"
-gpu_allocated = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+model_name = "mobilenet"
+gpu_allocated = [10, 25, 50, 75, 100]
 bs = [1, 8, 16, 32]
 
 final_res = []
@@ -292,7 +292,7 @@ for jj in range(len(bs)):
 predict_res_csv = "predict.csv"
 with open(predict_res_csv, mode="w", encoding="utf-8-sig", newline="") as f:
     writer = csv.writer(f)
-    lines = [[] for i in range(10)]
+    lines = [[] for i in range(5)]
     for i in range(len(final_res[0])):
         lines[i].append(final_res[0][i])
         lines[i].append(final_res[1][i])

@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-models = ["resnet50", "vgg19", "densenet201"]
+models = ["resnet50", "vgg19", "densenet201", "mobilenet"]
 batch = [1, 8, 16, 32]
 gpu10_kernel_sm_usage_hash = collections.defaultdict(list)
 gpu25_kernel_sm_usage_hash = collections.defaultdict(list)

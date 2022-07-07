@@ -1,0 +1,960 @@
+﻿model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,8795.97826385498,500,17.59195652770996
+vgg19,10,1,8604.39309501648,298,28.873802332270067
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,8727.238342285156,500,17.454476684570313
+vgg19,10,8,7356.0596923828125,41,179.4160900581174
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,8773.871395111084,500,17.547742790222166
+vgg19,10,16,7117.014114379883,33,215.66709437514797
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,8787.403852462769,500,17.574807704925536
+vgg19,10,32,5372.305633544922,13,413.2542795034555
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,10,1,14467.46061706543,500,28.934921234130858
+resnet50,10,8,14772.19514465332,206,71.70968516822
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,8,35646.02156829834,500,71.29204313659667
+vgg19,10,8,34247.81332397461,191,179.30792316217074
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,8,35761.60752105713,500,71.52321504211426
+vgg19,10,16,34077.28479003906,158,215.6790176584751
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,8,35778.847915649414,500,71.55769583129883
+vgg19,10,32,32243.74395751953,78,413.3813327887119
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,10,1,14480.826244354248,500,28.961652488708495
+resnet50,10,16,14890.990753173828,129,115.43403684630874
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,16,57535.80838775635,500,115.0716167755127
+vgg19,10,8,56068.50129699707,312,179.70673492627267
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,16,57664.61576843262,500,115.32923153686524
+vgg19,10,16,55996.43656921387,259,216.20245779619253
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,16,57719.61880493164,500,115.43923760986328
+vgg19,10,32,54284.54275512695,131,414.38582255822104
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,10,1,14513.844381332397,500,29.027688762664795
+resnet50,10,32,14956.722793579102,71,210.6580675151986
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,10,8,89923.25723266602,500,179.84651446533204
+resnet50,10,32,91608.26322937012,437,209.629892973387
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,32,105026.9165802002,500,210.0538331604004
+vgg19,10,16,103237.58863830566,477,216.43100343460307
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,32,105072.87739562988,500,210.14575479125978
+vgg19,10,32,101582.70056152344,245,414.62326759805484
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,5583.880992889404,500,11.167761985778808
+resnet50,10,1,5673.572170257568,305,18.601875968057602
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,9097.949954986572,500,18.195899909973143
+vgg19,25,8,8588.273330688477,125,68.70618664550781
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,9251.899639129639,500,18.503799278259276
+vgg19,25,16,8667.417915344238,104,83.34055687830998
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,9246.739763259888,500,18.493479526519774
+vgg19,25,32,7974.837738037109,50,159.4967547607422
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,5599.986077308655,500,11.19997215461731
+resnet50,10,8,5753.51383972168,77,74.72095895742441
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,8,34485.66718292236,500,68.97133436584473
+resnet50,10,8,35121.78602600098,479,73.32314410438617
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,8,37148.77411651611,500,74.29754823303223
+vgg19,25,16,36521.10767364502,435,83.9565693647012
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,8,37142.23574066162,500,74.28447148132324
+vgg19,25,32,35804.49398803711,223,160.55826900465073
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,5664.312610626221,500,11.328625221252441
+resnet50,10,16,5916.330963134766,49,120.74144822724011
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,8,34618.27226257324,500,69.23654452514648
+resnet50,10,16,35219.29879760742,299,117.79029698196462
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,16,42261.94980621338,500,84.52389961242676
+resnet50,10,16,43092.1974029541,361,119.36896787521911
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,16,59881.58689880371,500,119.76317379760742
+vgg19,25,32,58683.42465209961,362,162.1089078787282
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,5670.940101623535,500,11.34188020324707
+resnet50,10,32,5908.390487670898,27,218.8292773211444
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,8,34763.24624633789,500,69.52649249267579
+resnet50,10,32,35470.2373046875,165,214.97113517992423
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,16,42489.56253051758,500,84.97912506103516
+resnet50,10,32,43457.03077697754,199,218.37703908028914
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,32,81285.70166015625,500,162.5714033203125
+resnet50,10,32,82763.99893188477,379,218.37466736645058
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3244.7043166160583,500,6.489408633232117
+resnet50,10,1,3321.926851272583,150,22.146179008483887
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,10643.25064086914,500,21.286501281738282
+vgg19,50,8,10401.752864837646,278,37.41637721164621
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,11432.9024143219,500,22.8658048286438
+vgg19,50,16,11093.775661468506,233,47.61277107926397
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,11507.100198745728,500,23.014200397491454
+vgg19,50,32,10785.859489440918,119,90.63747470118419
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3253.0993604660034,500,6.506198720932007
+resnet50,10,8,3344.473289489746,39,85.75572537153195
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,8,18881.416988372803,500,37.762833976745604
+resnet50,10,8,19262.49055480957,230,83.74995893395466
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,16,24106.462642669678,500,48.21292528533935
+resnet50,10,8,24594.32054901123,275,89.43389290549538
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,8,44867.896743774414,500,89.73579348754883
+vgg19,50,32,44171.02687835693,480,92.0229726632436
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3295.2782368659973,500,6.590556473731994
+resnet50,10,16,3437.617691040039,25,137.50470764160156
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,8,19119.301288604736,500,38.23860257720947
+resnet50,10,16,19516.2763671875,145,134.5950094288793
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,16,24407.9376411438,500,48.8158752822876
+resnet50,10,16,24844.797576904297,175,141.97027186802455
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,32,46530.72969055176,500,93.06145938110352
+resnet50,10,16,47362.89164733887,331,143.09030709165822
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3311.5463066101074,500,6.623092613220215
+resnet50,10,32,3504.2117462158203,14,250.30083901541573
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,8,19151.393962860107,500,38.30278792572022
+resnet50,10,32,19614.795928955078,80,245.18494911193847
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,16,24489.13702774048,500,48.97827405548096
+resnet50,10,32,25150.39324951172,97,259.2824046341414
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,32,46724.29300689697,500,93.44858601379394
+resnet50,10,32,47605.8522644043,182,261.57061683738624
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,1,2707.3080620765686,500,5.414616124153137
+resnet50,10,1,2784.820287704468,112,24.864466854504176
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,12212.6338596344,500,24.4252677192688
+vgg19,75,8,12007.69440460205,408,29.4306235406913
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,14122.787330627441,500,28.24557466125488
+vgg19,75,16,13862.726253509521,355,39.049933108477525
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,14192.961954116821,500,28.385923908233643
+vgg19,75,32,13653.811347961426,184,74.20549645631209
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,1,2712.8099484443665,500,5.425619896888733
+resnet50,10,8,2851.1494369506836,30,95.03831456502279
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,8,14837.950994491577,500,29.675901988983153
+resnet50,10,8,15184.959342956543,160,94.90599589347839
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,16,19813.59306716919,500,39.62718613433838
+resnet50,10,8,20205.720985412598,189,106.90857664239469
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,32,37648.32816314697,500,75.29665632629394
+resnet50,10,8,38340.345962524414,357,107.39592706589471
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,1,2752.898555278778,500,5.505797110557556
+resnet50,10,16,2874.200653076172,19,151.2737185829564
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,8,14951.15313911438,500,29.90230627822876
+resnet50,10,16,15301.489059448242,102,150.0145986220416
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,16,20040.348724365234,500,40.08069744873047
+resnet50,10,16,20454.95979309082,121,169.04925448835388
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,32,38065.78815460205,500,76.1315763092041
+resnet50,10,16,38761.88249206543,228,170.00825654414663
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,1,2772.0217599868774,500,5.544043519973755
+resnet50,10,32,3011.066909790039,11,273.7333554354581
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,8,15025.884895324707,500,30.051769790649413
+resnet50,10,32,15409.093322753906,56,275.16238076346264
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,16,20092.2498588562,500,40.184499717712406
+resnet50,10,32,20615.30404663086,67,307.6911051735949
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,32,38176.83848571777,500,76.35367697143555
+resnet50,10,32,39015.51737976074,126,309.64696333143445
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,1,2558.4481239318848,500,5.116896247863769
+resnet50,10,1,2626.904378890991,102,25.753964498931285
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,13214.310285568237,500,26.428620571136474
+vgg19,90,8,13055.736534118652,492,26.53604986609482
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,15716.37631034851,500,31.43275262069702
+vgg19,90,16,15482.052875518799,429,36.08870134153566
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,10,1,15858.852897644043,500,31.717705795288087
+vgg19,90,32,15341.821784973145,224,68.49027582577297
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,1,2590.964732646942,500,5.1819294652938845
+resnet50,10,8,2690.767250061035,27,99.65804629855685
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,8,13375.203105926514,500,26.750406211853026
+resnet50,10,8,13657.246788024902,134,101.91975214943957
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,16,18273.15114593506,500,36.54630229187012
+resnet50,10,8,18626.90394592285,157,118.64270029250224
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,32,34780.155502319336,500,69.56031100463868
+resnet50,10,8,35362.93657684326,297,119.06712652135778
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,1,2620.551875591278,500,5.241103751182556
+resnet50,10,16,2747.1131134033203,17,161.59488902372473
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,8,13532.221057891846,500,27.06444211578369
+resnet50,10,16,13829.82308959961,85,162.70380105411306
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,16,18461.91828918457,500,36.92383657836914
+resnet50,10,16,18849.08494567871,102,184.7949504478305
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,32,35130.3221282959,500,70.2606442565918
+resnet50,10,16,35784.27453613281,191,187.35222270226603
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,1,2627.44739484787,500,5.25489478969574
+resnet50,10,32,2855.1006469726562,10,285.51006469726565
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,8,13552.647132873535,500,27.10529426574707
+resnet50,10,32,13926.49429321289,47,296.30838921729554
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,16,18560.52187347412,500,37.121043746948246
+resnet50,10,32,19090.223754882812,56,340.8968527657645
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,90,32,35234.19094085693,500,70.46838188171387
+resnet50,10,32,35993.43118286133,105,342.7945826939174
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,3841.3685417175293,500,7.682737083435058
+vgg19,10,1,3624.048608779907,122,29.705316465409076
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,3775.8397121429443,500,7.551679424285888
+vgg19,10,8,2364.719467163086,13,181.90149747408353
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,3801.5801606178284,500,7.603160321235657
+vgg19,10,16,1964.7900695800781,9,218.31000773111978
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,3895.7723236083984,500,7.791544647216797
+vgg19,10,32,423.9756774902344,1,423.9756774902344
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,14562.17288017273,500,29.12434576034546
+vgg19,10,1,14338.350561141968,478,29.996549291091984
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,14515.399139404297,500,29.030798278808593
+vgg19,10,8,13080.356018066406,71,184.23036645163953
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,14537.235145568848,500,29.074470291137697
+vgg19,10,16,12800.301895141602,58,220.6948602610621
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,14565.000200271606,500,29.130000400543214
+vgg19,10,32,11009.752471923828,26,423.45201815091644
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,10,1,15276.46994972229,500,30.55293989944458
+resnet50,25,16,15565.579711914062,324,48.04191269109278
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,16,23830.289741516113,500,47.66057948303223
+vgg19,10,8,22375.098907470703,120,186.45915756225585
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,16,23955.84104156494,500,47.91168208312988
+vgg19,10,16,22229.590759277344,99,224.54132080078125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,16,23923.79246520996,500,47.84758493041992
+vgg19,10,32,20173.17822265625,47,429.2165579288564
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,10,1,15359.310167312622,500,30.718620334625243
+resnet50,25,32,15648.653358459473,180,86.93696310255262
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,32,43301.096923828125,500,86.60219384765625
+vgg19,10,8,41769.48680114746,222,188.15084144661017
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,32,43524.19615936279,500,87.04839231872559
+vgg19,10,16,41669.578063964844,184,226.46509817372197
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,32,43610.24974822998,500,87.22049949645996
+vgg19,10,32,40004.12875366211,92,434.82748645284903
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,4123.159062862396,500,8.246318125724793
+vgg19,25,1,4091.612148284912,354,11.558226407584497
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,4052.1708483695984,500,8.104341696739196
+vgg19,25,8,3520.381477355957,50,70.40762954711914
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,4090.2210512161255,500,8.18044210243225
+vgg19,25,16,3398.626266479492,40,84.96565666198731
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,4080.276668548584,500,8.160553337097168
+vgg19,25,32,2759.516067504883,17,162.32447455911074
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,5911.752058029175,500,11.82350411605835
+resnet50,25,8,6034.418321609497,194,31.105249080461324
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,15158.505702972412,500,30.317011405944825
+vgg19,25,8,14638.064964294434,204,71.75522041320801
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,15523.170824050903,500,31.046341648101805
+vgg19,25,16,14893.65274810791,169,88.1281227698693
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,15533.018617630005,500,31.06603723526001
+vgg19,25,32,14153.770080566406,84,168.4972628638858
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,6123.815609931946,500,12.24763121986389
+resnet50,25,16,6306.112674713135,122,51.68944815338635
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,16,25259.04563140869,500,50.518091262817386
+vgg19,25,8,24684.199073791504,334,73.90478764608234
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,16,25845.795429229736,500,51.69159085845947
+vgg19,25,16,25153.48657989502,276,91.13582094164862
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,16,25843.910163879395,500,51.687820327758786
+vgg19,25,32,24542.603149414062,141,174.06101524407137
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,6213.2294273376465,500,12.426458854675293
+resnet50,25,32,6420.041580200195,68,94.41237617941464
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,8,37366.316734313965,500,74.73263346862792
+resnet50,25,32,38016.8722076416,414,91.82819373826474
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,16,46201.53798675537,500,92.40307597351074
+resnet50,25,32,47011.35646820068,499,94.211135206815
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,32,47069.14479827881,500,94.13828959655761
+vgg19,25,32,45660.262771606445,259,176.29445085562335
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3372.102913379669,500,6.744205826759338
+resnet50,25,1,3406.2603731155396,359,9.488190454360835
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,4606.094764709473,500,9.212189529418945
+vgg19,50,8,4354.831111907959,113,38.53832842396424
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,4944.381443977356,500,9.888762887954712
+vgg19,50,16,4600.421035766602,94,48.940649316665976
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,4952.659418106079,500,9.905318836212158
+vgg19,50,32,4292.859886169434,46,93.32304100368334
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3486.5227494239807,500,6.973045498847961
+resnet50,25,8,3578.8413009643555,98,36.518788785350566
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,17766.483699798584,500,35.53296739959717
+vgg19,50,8,17480.416290283203,436,40.09269791349359
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,18924.340728759766,500,37.84868145751953
+vgg19,50,16,18531.64995956421,362,51.192403203216045
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,19026.37682723999,500,38.05275365447998
+vgg19,50,32,18236.1531829834,187,97.51953573787914
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3599.812355995178,500,7.1996247119903565
+resnet50,25,16,3693.972324371338,62,59.58019878018287
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,8,20680.65887069702,500,41.361317741394046
+resnet50,25,16,21069.78606414795,360,58.52718351152208
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,16,26580.671951293945,500,53.16134390258789
+resnet50,25,16,27012.005256652832,431,62.67286602471655
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,16,31474.616737365723,500,62.94923347473144
+vgg19,50,32,30705.780792236328,304,101.00585786919845
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3624.0466799736023,500,7.248093359947204
+resnet50,25,32,3777.047073364258,35,107.91563066755022
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,8,20926.980094909668,500,41.85396018981933
+resnet50,25,32,21362.29438018799,201,106.28007154322383
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,16,26912.623023986816,500,53.825246047973636
+resnet50,25,32,27445.91725921631,242,113.41288123643103
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,32,51190.47597503662,500,102.38095195007324
+resnet50,25,32,52109.412101745605,455,114.52618044339694
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,1,2799.4604802131653,500,5.59892096042633
+resnet50,25,1,2831.2099227905273,266,10.643646326280178
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,5214.10514831543,500,10.428210296630859
+vgg19,75,8,5019.218978881836,166,30.23625890892672
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,6078.5020208358765,500,12.157004041671753
+vgg19,75,16,5816.833312988281,145,40.11609181371229
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,1,6075.110816001892,500,12.150221632003785
+vgg19,75,32,5547.148986816406,73,75.98834228515625
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,1,2891.507164955139,500,5.783014329910278
+resnet50,25,8,2972.717597961426,73,40.72215887618391
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,8,15705.480297088623,500,31.410960594177247
+resnet50,25,8,15954.037170410156,400,39.88509292602539
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,16,20929.97593307495,500,41.8599518661499
+resnet50,25,8,21237.0001411438,469,45.28145019433646
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,8,22873.42811203003,500,45.74685622406006
+vgg19,75,32,22298.343376159668,281,79.35353514647569
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,1,2988.0759654045105,500,5.976151930809021
+resnet50,25,16,3094.6170349121094,47,65.84291563642786
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,8,16224.445011138916,500,32.44889002227783
+resnet50,25,16,16547.8617477417,251,65.92773604677967
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,16,21676.113479614258,500,43.35222695922852
+resnet50,25,16,22048.93349456787,297,74.23883331504334
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,25,16,37622.10389709473,500,75.24420779418945
+vgg19,75,32,37039.93494415283,450,82.31096654256184
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,1,3036.7026872634888,500,6.073405374526978
+resnet50,25,32,3215.382110595703,27,119.08822631835938
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,8,16370.09435081482,500,32.74018870162964
+resnet50,25,32,16729.739768981934,140,119.49814120701382
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,16,21958.22718811035,500,43.916454376220706
+resnet50,25,32,22361.5528717041,166,134.70814982954278
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,75,32,41660.48833465576,500,83.32097666931152
+resnet50,25,32,42388.316970825195,311,136.29683913448616
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3531.873249053955,500,7.0637464981079106
+vgg19,10,1,3326.7641639709473,111,29.970848324062587
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3501.9885721206665,500,7.003977144241333
+vgg19,10,8,2018.0115661621094,11,183.45559692382812
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3412.2078037261963,500,6.8244156074523925
+vgg19,10,16,1539.1578979492188,7,219.87969970703125
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3448.2907190322876,500,6.896581438064575
+vgg19,10,32,411.9139709472656,1,411.9139709472656
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,8425.203777313232,500,16.850407554626464
+vgg19,10,1,8201.236196517944,247,33.20338541100382
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,8343.26630973816,500,16.686532619476317
+vgg19,10,8,6780.397232055664,34,199.42344800163718
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,8402.617296218872,500,16.805234592437746
+vgg19,10,16,6468.482696533203,27,239.57343320493345
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,8410.708362579346,500,16.82141672515869
+vgg19,10,32,4580.331268310547,10,458.0331268310547
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,14519.778270721436,500,29.03955654144287
+vgg19,10,1,14269.902341842651,395,36.126335042639624
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,14410.480848312378,500,28.820961696624757
+vgg19,10,8,12710.033782958984,59,215.42430140608448
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,14527.02921295166,500,29.05405842590332
+vgg19,10,16,12439.67253112793,48,259.15984439849854
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,14553.74945640564,500,29.10749891281128
+vgg19,10,32,10423.722381591797,21,496.3677324567522
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,10,1,18739.24557876587,500,37.478491157531735
+resnet50,50,32,19093.374851226807,360,53.03715236451891
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,32,26375.87000656128,500,52.75174001312256
+vgg19,10,8,24558.805938720703,110,223.2618721701882
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,32,26560.69719696045,500,53.1213943939209
+vgg19,10,16,24406.681350708008,91,268.2052895682199
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,32,26574.750549316406,500,53.14950109863281
+vgg19,10,32,22074.977294921875,43,513.3715649981831
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3542.086528778076,500,7.084173057556153
+vgg19,25,1,3488.6269149780273,300,11.628756383260091
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3503.8721294403076,500,7.007744258880615
+vgg19,25,8,2974.803855895996,42,70.82866323561896
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3537.6791648864746,500,7.075358329772949
+vgg19,25,16,2929.251350402832,34,86.15445148243623
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3558.1983041763306,500,7.1163966083526615
+vgg19,25,32,2300.633056640625,14,164.3309326171875
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,6686.942175865173,500,13.373884351730347
+resnet50,50,8,6798.885623931885,369,18.425164292498334
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,9023.222524642944,500,18.04644504928589
+vgg19,25,8,8426.11043548584,105,80.24867081415086
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,9197.504753112793,500,18.395009506225588
+vgg19,25,16,8437.34122467041,86,98.1086188915164
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,9198.007829666138,500,18.396015659332274
+vgg19,25,32,7671.584823608398,41,187.1118249660585
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,7354.760064125061,500,14.709520128250123
+resnet50,50,16,7493.1276512146,236,31.750540894977117
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,15587.663557052612,500,31.175327114105226
+vgg19,25,8,14927.673393249512,171,87.29633563303808
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,15956.194095611572,500,31.912388191223144
+vgg19,25,16,15096.355224609375,140,107.83110874720983
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,15957.993350982666,500,31.91598670196533
+vgg19,25,32,14298.626525878906,70,204.26609322684152
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,7659.115183830261,500,15.318230367660522
+resnet50,50,32,7871.331912994385,136,57.87744053672342
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,32,28367.982109069824,500,56.73596421813965
+vgg19,25,8,27722.261795043945,306,90.59562678118937
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,32,29033.884086608887,500,58.06776817321777
+vgg19,25,16,28206.387237548828,252,111.93010808551122
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,32,29088.314849853516,500,58.17662969970703
+vgg19,25,32,27437.03091430664,129,212.69016212640807
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3444.410524368286,500,6.888821048736572
+resnet50,50,1,3459.0217928886414,477,7.251618014441596
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3726.7914571762085,500,7.453582914352417
+vgg19,50,8,3492.5422592163086,89,39.242047856363016
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3830.4795508384705,500,7.660959101676941
+vgg19,50,16,3511.9148445129395,70,50.17021206447056
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,1,3822.3226532936096,500,7.644645306587219
+vgg19,50,32,3147.6202392578125,33,95.38243149266098
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,3951.0935730934143,500,7.9021871461868285
+resnet50,50,8,4020.129419326782,187,21.49801828516996
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,10416.214597702026,500,20.832429195404053
+vgg19,50,8,10087.212699890137,228,44.242160964430425
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,11138.297994613647,500,22.276595989227296
+vgg19,50,16,10751.849681854248,190,56.58868253607499
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,8,11170.731130599976,500,22.34146226119995
+vgg19,50,32,10380.672203063965,97,107.017239206845
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,4244.868095874786,500,8.489736191749573
+resnet50,50,16,4336.226955413818,120,36.13522462844848
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,17920.86393737793,500,35.84172787475586
+vgg19,50,8,17558.54937362671,363,48.370659431478536
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,19143.84889984131,500,38.28769779968262
+vgg19,50,16,18670.16951751709,300,62.233898391723635
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,16,19294.579433441162,500,38.58915886688232
+vgg19,50,32,18375.996520996094,156,117.7948494935647
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,1,4414.485469341278,500,8.828970938682556
+resnet50,50,32,4527.317649841309,69,65.61329927306244
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,8,25079.486320495605,500,50.15897264099121
+resnet50,50,32,25530.819690704346,393,64.96391778805177
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,50,16,32328.34553527832,500,64.65669107055665
+resnet50,50,32,32864.2569732666,473,69.48045871726555
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,50,32,35093.41921234131,500,70.18683842468262
+vgg19,50,32,34147.19055175781,279,122.39136398479502
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,1,3192.264449119568,500,6.384528898239136
+vgg19,10,1,2996.1535720825195,99,30.264177495783027
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,1,3367.5935015678406,500,6.735187003135681
+vgg19,10,8,1844.7862396240234,10,184.47862396240234
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,1,3343.3271355628967,500,6.686654271125794
+vgg19,10,16,1541.2734375,7,220.18191964285714
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,1,3386.0610280036926,500,6.772122056007385
+vgg19,10,32,408.8706970214844,1,408.8706970214844
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,8,7059.697756767273,500,14.119395513534545
+vgg19,10,1,6820.46333694458,188,36.2790603028967
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,8,7002.886436462402,500,14.005772872924805
+vgg19,10,8,5189.295715332031,24,216.2206548055013
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,8,7034.694909095764,500,14.069389818191528
+vgg19,10,16,4923.874816894531,19,259.15130615234375
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,8,7029.946407318115,500,14.05989281463623
+vgg19,10,32,2932.9191284179688,6,488.8198547363281
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,16,12029.983266830444,500,24.059966533660887
+vgg19,10,1,11726.52039718628,277,42.33400865410209
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,16,11937.118379592896,500,23.87423675918579
+vgg19,10,8,9927.038772583008,40,248.17596931457518
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,16,12046.009349822998,500,24.092018699645998
+vgg19,10,16,9544.577606201172,32,298.2680501937866
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,16,12012.221384048462,500,24.024442768096925
+vgg19,10,32,7304.323974609375,13,561.8710749699519
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,32,22345.306621551514,500,44.69061324310303
+vgg19,10,1,22032.5337600708,492,44.781572683070735
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,32,22157.999492645264,500,44.31599898529053
+vgg19,10,8,19922.30433654785,76,262.1355833756296
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,32,22359.06727218628,500,44.71813454437256
+vgg19,10,16,19762.456573486328,63,313.68978688073537
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,32,22390.545265197754,500,44.78109053039551
+vgg19,10,32,17424.283233642578,29,600.8373528842268
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,1,3420.4546246528625,500,6.840909249305725
+vgg19,25,1,3375.455460548401,290,11.639501588097934
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,1,3546.522847175598,500,7.093045694351196
+vgg19,25,8,3053.5283126831055,43,71.01228634146757
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,1,3537.513210773468,500,7.075026421546936
+vgg19,25,16,2931.3986434936523,34,86.21760716157802
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,1,3421.7261447906494,500,6.843452289581299
+vgg19,25,32,2142.1429138183594,13,164.7802241398738
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,7259.935903549194,500,14.519871807098388
+resnet50,75,8,7334.8506898880005,478,15.344875920267784
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,8,7509.404126167297,500,15.018808252334594
+vgg19,25,8,6840.396194458008,79,86.58729360073427
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,8,7699.93926525116,500,15.399878530502319
+vgg19,25,16,6892.237197875977,65,106.03441842886117
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,8,7661.373181343079,500,15.322746362686157
+vgg19,25,32,6038.958923339844,30,201.2986307779948
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,8545.994239807129,500,17.09198847961426
+resnet50,75,16,8669.876916885376,331,26.192981622010198
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,16,12912.836154937744,500,25.82567230987549
+vgg19,25,8,12162.247314453125,121,100.51444061531508
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,16,13260.321870803833,500,26.520643741607667
+vgg19,25,16,12293.890830993652,99,124.18071546458235
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,16,13206.41099357605,500,26.4128219871521
+vgg19,25,32,11226.888809204102,48,233.8935168584188
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+vgg19,25,1,9077.862095832825,500,18.155724191665648
+resnet50,75,32,9247.782539367676,190,48.6725396808825
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,32,23997.84617614746,500,47.995692352294924
+vgg19,25,8,23118.796684265137,217,106.5382335680421
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,32,24531.43003845215,500,49.0628600769043
+vgg19,25,16,23491.823616027832,179,131.23923807836778
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,75,32,24589.040573120117,500,49.17808114624023
+vgg19,25,32,22470.937240600586,91,246.9333762703361
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,1,3188.1299204826355,500,6.376259840965271
+vgg19,10,1,3004.1113929748535,99,30.34455952499852
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,1,3015.6368956565857,500,6.031273791313171
+vgg19,10,8,1482.7610778808594,8,185.34513473510742
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,1,3381.1837105751038,500,6.762367421150207
+vgg19,10,16,1539.451156616211,7,219.92159380231584
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,1,3389.7024641036987,500,6.779404928207398
+vgg19,10,32,408.61907958984375,1,408.61907958984375
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,8,6314.62128162384,500,12.629242563247681
+vgg19,10,1,6038.538730621338,158,38.218599560894546
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,8,6272.616199493408,500,12.545232398986816
+vgg19,10,8,4350.537460327148,19,228.97565580669203
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,8,6304.364230155945,500,12.60872846031189
+vgg19,10,16,4088.897506713867,15,272.5931671142578
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,8,6312.578981399536,500,12.625157962799072
+vgg19,10,32,2029.6885986328125,4,507.4221496582031
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,16,11179.653182983398,500,22.3593063659668
+vgg19,10,1,10824.59990310669,233,46.45751031376262
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,16,11104.876335144043,500,22.209752670288086
+vgg19,10,8,8899.800994873047,33,269.6909392385772
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,16,11181.71508216858,500,22.363430164337156
+vgg19,10,16,8474.924011230469,26,325.9586158165565
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,16,11179.59123802185,500,22.359182476043703
+vgg19,10,32,6056.405364990234,10,605.6405364990235
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,32,21075.86252975464,500,42.151725059509275
+vgg19,10,1,20695.808265686035,418,49.51150302795702
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,32,20909.871269226074,500,41.81974253845215
+vgg19,10,8,18457.722442626953,64,288.40191316604614
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,32,21081.950443267822,500,42.16390088653564
+vgg19,10,16,18089.21502685547,52,347.8695197472206
+
+model name,gpu resource,batchsize,total latency,real exec times,avg latency
+resnet50,90,32,21128.171871185303,500,42.2563437423706
+vgg19,10,32,15311.371398925781,23,665.7117999532949
+

@@ -4,7 +4,7 @@ from scipy.optimize import curve_fit
 import numpy as np
 import matplotlib.pyplot as plt
 
-models = ["resnet50", "vgg19", "densenet201"]
+models = ["resnet50", "vgg19", "densenet201", "mobilenet"]
 batch = [1, 8, 16, 32]
 
 gpu10_gpu_speed_hash = collections.defaultdict(list)
