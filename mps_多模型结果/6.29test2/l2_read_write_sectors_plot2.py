@@ -16,7 +16,7 @@ def func_4dimension(x, k1, k2, k3, k4, b):
     return k4 * x[2] * (k1 * x[0] * x[0] + k2 * x[0]) / (k3 * x[1] + b)
 
 gpu_resource = ["10", "25", "50", "75"]
-bs = ["1", "8", "16"]
+bs = ["1", "8", "16", "32"]
 
 # 保存m1(受影响模型)的传输数据量的文件
 m_data_csv1 = "C:\\Users\\73998\Desktop\实验数据\kernel_6.10\\raw\get_kernel\hit_rate_message.csv"
@@ -44,17 +44,19 @@ for idx1, gpu in enumerate(gpu_resource):
         print("g{}_b{}".format(gpu, b))
         data_csv3 = "./tmp_r_d.csv"
         # data_csv3 = "./tmp_r_v.csv"
+        # data_csv1 = "./tmp_r_m.csv"
         x_data1 = []
         y_data1 = []
 
-        data_csv2 = "./tmp_r_m.csv"
-        # data_csv2 = "./tmp_d_m.csv"
+        # data_csv2 = "./tmp_r_m.csv"
+        data_csv2 = "./tmp_d_m.csv"
         # data_csv2 = "./tmp_v_m.csv"
         x_data2 = []
         y_data2 = []
 
-        data_csv1 = "./tmp_r_v.csv"
-        # data_csv1 = "./tmp_d_v.csv"
+        # data_csv1 = "./tmp_r_v.csv"
+        data_csv1 = "./tmp_d_v.csv"
+        # data_csv3 = "./tmp_v_m.csv"
         x_data3 = []
         y_data3 = []
 
@@ -64,9 +66,10 @@ for idx1, gpu in enumerate(gpu_resource):
         with open(data_csv1, mode="r", encoding="utf-8-sig") as f:
             reader = csv.reader(f)
             for row in reader:
-                # model_name = "densenet201"
-                model_name = "resnet50"
+                model_name = "densenet201"
+                # model_name = "resnet50"
                 # model_name = "vgg19"
+                # model_name = "mobilenet"
                 if len(row) <= 37 or row[38] == '':
                     continue
                 if row[0] == model_name and row[1] == compared_gpu and row[2] == compared_bs:
@@ -84,9 +87,10 @@ for idx1, gpu in enumerate(gpu_resource):
         with open(data_csv2, mode="r", encoding="utf-8-sig") as f:
             reader = csv.reader(f)
             for row in reader:
-                # model_name = "densenet201"
-                model_name = "resnet50"
+                model_name = "densenet201"
+                # model_name = "resnet50"
                 # model_name = "vgg19"
+                # model_name = "mobilenet"
                 if len(row) <= 37 or row[38] == '':
                     continue
                 if row[0] == model_name and row[1] == compared_gpu and row[2] == compared_bs:
@@ -105,9 +109,10 @@ for idx1, gpu in enumerate(gpu_resource):
         with open(data_csv3, mode="r", encoding="utf-8-sig") as f:
             reader = csv.reader(f)
             for row in reader:
-                # model_name = "densenet201"
-                model_name = "resnet50"
+                model_name = "densenet201"
+                # model_name = "resnet50"
                 # model_name = "vgg19"
+                # model_name = "mobilenet"
                 if len(row) <= 37 or row[38] == '':
                     continue
                 if row[0] == model_name and row[1] == compared_gpu and row[2] == compared_bs:
@@ -134,7 +139,7 @@ popt, pcov = curve_fit(func_4dimension, fit_x, four_dimension_fit_y)
 fit_model_4dimension_surface = "fit_model_4dimension_surface.csv"
 with open(fit_model_4dimension_surface, mode="w", encoding="utf-8-sig", newline="") as f:
     writer = csv.writer(f)
-    writer.writerow(["VGG19", "k1", "k2", "k3", "k4", "b"])
+    writer.writerow(["densenet201", "k1", "k2", "k3", "k4", "b"])
     writer.writerow(["", popt[0], popt[1], popt[2], popt[3], popt[4]])
 #
 # 验证
@@ -153,11 +158,11 @@ print("MAE = {}".format(MAE / len(four_dimension_fit_y)))
 
 MAE = 0
 n = 0
-input_csv = "./tmp_r_d.csv"
+input_csv = "./tmp_d_v.csv"
 with open(input_csv, mode="r", encoding="utf-8-sig") as f:
     reader = csv.reader(f)
     for row in reader:
-        if len(row) >= 14 and row[0] == "resnet50" and row[1] != "origin" and row[9] != "":
+        if len(row) >= 14 and row[0] == "densenet201" and row[1] != "origin" and row[9] != "":
             m1_name = row[0]
             m1_g = int(row[1])
             m1_b = int(row[2])

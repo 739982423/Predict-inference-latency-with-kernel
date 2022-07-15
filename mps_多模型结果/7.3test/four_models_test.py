@@ -16,6 +16,7 @@ m4_name = "vgg19"
 resnet50_coefficient = []
 densenet201_coefficient = []
 vgg19_coefficient = []
+mobilenet_coefficient = []
 
 with open("./coefficient.csv", mode="r", encoding="utf-8-sig") as f:
     reader = csv.reader(f)
@@ -38,6 +39,14 @@ with open("./coefficient.csv", mode="r", encoding="utf-8-sig") as f:
             vgg19_coefficient.append(float(row[3]))
             vgg19_coefficient.append(float(row[4]))
             vgg19_coefficient.append(float(row[5]))
+        if row[0] == "mobilenet":
+            mobilenet_coefficient.append(float(row[1]))
+            mobilenet_coefficient.append(float(row[2]))
+            mobilenet_coefficient.append(float(row[3]))
+            mobilenet_coefficient.append(float(row[4]))
+            mobilenet_coefficient.append(float(row[5]))
+
+
 print(resnet50_coefficient,
 densenet201_coefficient,
 vgg19_coefficient)
@@ -58,10 +67,11 @@ with open(m_data_csv1, mode="r", encoding="utf-8-sig") as f:
 # 打开真实共存结果的文件，读取其中不同的模型组合
 input_csv = "./tmp_" + m1_name[0] + "_" + m2_name[0] + "_" + m3_name[0] + "_" + m4_name[0] + ".csv"
 MAE1 = 0
-MAE2 = 0    #mobilenet还未拟合曲面
+MAE2 = 0
 MAE3 = 0
 MAE4 = 0
-ignore = 0
+ignore1 = 0
+ignore2 = 0
 n = 0
 with open(input_csv, mode="r", encoding="utf-8-sig") as f:
     reader = csv.reader(f)
@@ -134,12 +144,39 @@ with open(input_csv, mode="r", encoding="utf-8-sig") as f:
         x2 = m1_g
         coff = eval(m1_name + "_coefficient")
         predict = func_4dimension([x0, x1, x2], coff[0], coff[1], coff[2], coff[3], coff[4])
+        # if abs(predict - m1_latency_increase) >= 30:
+        #     ignore1 += 1
+        #     continue
         MAE1 += abs(predict - m1_latency_increase)
         print("predict m1:{}, real m1:{}, g1:{}".format(predict, m1_latency_increase, m1_g))
 
         # -----------------------------------------------------------------
         # predict m2
-        # 暂不预测
+        # m1归一化后的数据传输量
+        m1_ratio = m1_looptimes / m2_looptimes
+        normalized_m1_data_transfer = base_m1_data_transfer * m1_ratio
+        # print("normalized m2 数据传输量:{}".format(normalized_m2_data_transfer))
+
+        # m3归一化后的数据传输量
+        m3_ratio = m3_looptimes / m2_looptimes
+        normalized_m3_data_transfer = base_m3_data_transfer * m3_ratio
+        # print("normalized m3 数据传输量:{}".format(normalized_m3_data_transfer))
+
+        # m4归一化后的数据传输量
+        m4_ratio = m4_looptimes / m2_looptimes
+        normalized_m4_data_transfer = base_m4_data_transfer * m4_ratio
+        # print("normalized m3 数据传输量:{}".format(normalized_m3_data_transfer))
+
+        x0 = normalized_m1_data_transfer + normalized_m3_data_transfer + normalized_m4_data_transfer
+        x1 = base_m2_data_transfer
+        x2 = m2_g
+        coff = eval(m2_name + "_coefficient")
+        predict = func_4dimension([x0, x1, x2], coff[0], coff[1], coff[2], coff[3], coff[4])
+        # if abs(predict - m2_latency_increase) >= 30:
+        #     ignore2 += 1
+        #     continue
+        MAE2 += abs(predict - m2_latency_increase)
+        print("predict m2:{}, real m2:{}, g2:{}".format(predict, m2_latency_increase, m2_g))
 
         # -----------------------------------------------------------------
 
