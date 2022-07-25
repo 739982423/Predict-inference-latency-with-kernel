@@ -1,0 +1,5 @@
+说明：
+当前文件夹内的脚本需要运行在linux的2080ti上，目的是进行某个模型在不同batch和GPU资源下的kernel profile
+运行compute_single_test.py将启动profile（前提是安装好2022版本的nsight compute），脚本内部可以调整不同batch和GPU资源分配量
+可分析各个不同batch下的不同GPU资源分配量下的kernel信息。在实验中，分析的是batch=1 8 16 32，GPU=10 25 50 75
+最终结果将以resnet50_b1_loop1_g100.nsight-cuprof-report.ncu-rep的文件保存在当前目录

@@ -1,0 +1,10 @@
+说明：
+当前文件夹内的.csv文件包括两种：
+不是以tmp开头的是最原始的真实测试结果文件，以tmp开头的是经过格式转换的（更方便分析）结果，两者内容完全一致
+名称内的d、m、v、r表示densenet201、mobilenet、vgg19、resnet50
+用法：
+three_models_get_res.py是将三个模型共存的测试结果，比如d_r_v.csv转换为tmp_d_r_v.csv的文件（数据处理）
+three_models_test.py是测试kernel predict的方法的预测结果与真实测试结果的MAE
+
+four_models_get_res.py是将四个模型共存的测试结果，比如d_m_r_v.csv转换为tmp_d_m_r_v.csv的文件（计算MAE）
+four_models_test.py是测试kernel predict的方法的预测结果与真实测试结果的MAE

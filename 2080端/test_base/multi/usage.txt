@@ -1,0 +1,6 @@
+说明：
+当前文件夹内的脚本均需要在Linux的2080Ti上执行，目的是测试2、3、4个模型共存推理时，每个模型实际的推理延迟（在不同batch和GPU资源分配量下）
+test_base_latency_mul_2model.py是主循环，内部将调用mul_models_exec_2model.py以分配当前循环内各个模型的GPU分配量，再以多进程的方式同时执行。
+最终结果将存在d_v.csv这样的文件中
+
+test_base_latency_mul_3model.py与test_base_latency_mul_4model.py同理
