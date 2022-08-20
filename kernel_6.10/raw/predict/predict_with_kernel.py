@@ -23,7 +23,7 @@ def get_number(s):
 # profile_res_csv = "filtered_raw_resnet50_b8_g10.csv"
 model_name = "mobilenet"
 gpu_allocated = [10, 25, 50, 75, 100]
-bs = [1, 8, 16, 32]
+bs = [4]
 
 final_res = []
 for jj in range(len(bs)):

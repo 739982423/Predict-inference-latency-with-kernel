@@ -15,7 +15,7 @@ def func_show(x1, x2, k1, k2, k3, b):
 def func_4dimension(x, k1, k2, k3, k4, b):
     return k4 * x[2] * (k1 * x[0] * x[0] + k2 * x[0]) / (k3 * x[1] + b)
 
-gpu_resource = ["10", "25", "50", "75"]
+gpu_resource = ["10"]
 bs = ["1", "8", "16", "32"]
 
 # 保存m1(受影响模型)的传输数据量的文件
@@ -152,9 +152,9 @@ for i in range(len(four_dimension_fit_y)):
     print(x1, x2, x3)
     real = four_dimension_fit_y[i]
     MAE += abs(predict - real)
-    print("predict = {}, real = {}".format(predict, real))
+    # print("predict = {}, real = {}".format(predict, real))
 
-print("MAE = {}".format(MAE / len(four_dimension_fit_y)))
+# print("MAE = {}".format(MAE / len(four_dimension_fit_y)))
 
 MAE = 0
 n = 0
@@ -188,7 +188,7 @@ with open(input_csv, mode="r", encoding="utf-8-sig") as f:
 
             predict = func_4dimension([x0, x1, x2], popt[0], popt[1], popt[2], popt[3], popt[4])
             # print(row)
-            # print(x0, x1, x2)
+            print(x0, x1, x2)
             print("predict = {}, real = {}".format(predict, m1_real_latency_increased * 100))
             MAE += abs(predict - m1_real_latency_increased * 100)
             n += 1
