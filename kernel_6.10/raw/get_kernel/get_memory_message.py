@@ -1,6 +1,8 @@
 import csv
 
 def get_number(s):
+    if(s == 'nan'):
+        print(s)
     s_list = s.split(",")
     res = 0
     cur_power = 0
@@ -40,6 +42,8 @@ for m in model_name:
                         miss_sum += get_number(row[27])
                         sectors_l1_tex_read_from_l2 += get_number(row[22])
                         sectors_l1_tex_write_to_l2 += get_number(row[23])
+                        if row[32] == 'nan' or row[33] == 'nan':
+                            print(cur_file_name)
                         sectors_l2_read_from_dram += get_number(row[32])
                         sectors_l2_write_to_dram += get_number(row[33])
             with open(res_csv_name, mode = "a", encoding = "utf-8-sig", newline="") as f:

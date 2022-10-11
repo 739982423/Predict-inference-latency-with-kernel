@@ -1,3 +1,4 @@
+# 拟合 GPU时钟速率
 import csv
 import collections
 from scipy.optimize import curve_fit

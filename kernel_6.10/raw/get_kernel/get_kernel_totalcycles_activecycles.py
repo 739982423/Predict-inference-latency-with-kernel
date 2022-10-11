@@ -1,3 +1,4 @@
+# 拟合 GPU经历的周期数与SM活跃的周期数的比值 与 SM利用率 的乘积
 import csv
 import collections
 from scipy.optimize import curve_fit

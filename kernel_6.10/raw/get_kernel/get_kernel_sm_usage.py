@@ -1,3 +1,4 @@
+# 拟合 GPU的SM利用率
 import csv
 import collections
 from scipy.optimize import curve_fit

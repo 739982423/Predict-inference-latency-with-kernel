@@ -305,7 +305,7 @@ if len(surface_g50_x) != 0:
         g50_surface_plot_x[1].append(surface_g50_y[i])
     g50_popt, pcov = curve_fit(func, g50_surface_plot_x, surface_g50_z)
     print("gpu=50%, popt = {}".format(g50_popt))
-    plot_x = np.linspace(10, 400, 400)
+    plot_x = np.linspace(10, 100, 100)
     plot_y = np.linspace(10, 40, 40)
     X, Y = np.meshgrid(plot_x, plot_y)
     Z = func_show(X, Y, g50_popt[0], g50_popt[1], g50_popt[2], g50_popt[3])
@@ -313,7 +313,11 @@ if len(surface_g50_x) != 0:
     ax = plt.axes(projection='3d')
     plt.gca().invert_xaxis()
     ax.plot_surface(X, Y, Z)
-    ax.set_title('gpu=50% Surface plot')
+    ax.set_title('预测模型受影响百分比(%)')
+    plt.rcParams['font.sans-serif'] = ['SimHei']
+    plt.rcParams['axes.unicode_minus'] = False
+    plt.xlabel("共存模型L2缓存相关数据交换量")
+    plt.ylabel("预测模型L2缓存相关数据交换量")
     plt.show()
 
 g75_surface_plot_x = [[], []]

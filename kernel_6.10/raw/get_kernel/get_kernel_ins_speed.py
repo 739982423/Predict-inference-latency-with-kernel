@@ -1,3 +1,4 @@
+# 拟合 指令的执行速度
 import csv
 import collections
 from scipy.optimize import curve_fit
@@ -7,7 +8,7 @@ import matplotlib.pyplot as plt
 
 models = ["resnet50", "vgg19", "densenet201", "mobilenet"]
 batch = [1, 8, 16, 32]
-# batch = [1, 16, 32]
+
 gpu10_ins_speed_kernel_hash = collections.defaultdict(list)
 gpu25_ins_speed_kernel_hash = collections.defaultdict(list)
 gpu50_ins_speed_kernel_hash = collections.defaultdict(list)
@@ -24,6 +25,8 @@ for m in models:
                     kernel_name = row[2]
                     kernel_instructions = row[10]
                     kernel_type = (kernel_name, kernel_instructions)
+                    if row[9] == 'nan':
+                        print(m, b, 10)
                     gpu10_ins_speed_kernel_hash[kernel_type].append(row[9])
 for m in models:
     for b in batch:
@@ -35,6 +38,8 @@ for m in models:
                     kernel_name = row[2]
                     kernel_instructions = row[10]
                     kernel_type = (kernel_name, kernel_instructions)
+                    if row[9] == 'nan':
+                        print(m, b, 25)
                     gpu25_ins_speed_kernel_hash[kernel_type].append(row[9])
 
 for m in models:
@@ -47,6 +52,8 @@ for m in models:
                     kernel_name = row[2]
                     kernel_instructions = row[10]
                     kernel_type = (kernel_name, kernel_instructions)
+                    if row[9] == 'nan':
+                        print(m, b, 50)
                     gpu50_ins_speed_kernel_hash[kernel_type].append(row[9])
 
 for m in models:
@@ -59,6 +66,8 @@ for m in models:
                     kernel_name = row[2]
                     kernel_instructions = row[10]
                     kernel_type = (kernel_name, kernel_instructions)
+                    if row[9] == 'nan':
+                        print(m, b, 75)
                     gpu75_ins_speed_kernel_hash[kernel_type].append(row[9])
 
 for m in models:
@@ -71,6 +80,8 @@ for m in models:
                     kernel_name = row[2]
                     kernel_instructions = row[10]
                     kernel_type = (kernel_name, kernel_instructions)
+                    if row[9] == 'nan':
+                        print(m, b, 100)
                     gpu100_ins_speed_kernel_hash[kernel_type].append(row[9])
 
 # 对GPU资源为10时，各类型kernel的指令执行速度进行统计，并对多次出现的kernel速度进行平均

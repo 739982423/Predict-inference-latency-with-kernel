@@ -23,7 +23,7 @@ def get_number(s):
 # profile_res_csv = "filtered_raw_resnet50_b8_g10.csv"
 model_name = "mobilenet"
 gpu_allocated = [10, 25, 50, 75, 100]
-bs = [4]
+bs = [1, 8, 16, 32]
 
 final_res = []
 for jj in range(len(bs)):
@@ -137,7 +137,6 @@ for jj in range(len(bs)):
                 if row[0] == "ID":
                     continue
                 kernel_name = row[2]
-                # print(profile_res_csv)
                 instructions = int(get_number(row[10]))
                 parameters = ins_speed_kernel_hash[(kernel_name, instructions)]
                 # print(row)
@@ -241,8 +240,6 @@ for jj in range(len(bs)):
         # print(len(predict_sm_frequency_list), len(origin_sm_frequency_list))
         # print(len(predict_cycles_ratio_list), len(origin_total_cycles_list))
 
-        # ratio = [0.65, 0.75, 0.81, 0.811, 0.812]
-
         predict_time_list = []
         # cur_ratio = ratio[gpu.index(gpu_resource)]
 
@@ -269,30 +266,20 @@ for jj in range(len(bs)):
         print("model:", model_name)
         print("gpu resource:", gpu_allocated[ii])
         print("bs:", bs[jj])
-        if sum(total_time) / 1000 < 1:
-            print(sum(total_time))
-        else:
-            print(sum(total_time) / 1000)
+        # if sum(total_time) / 1000 < 1:
+        #     print(sum(total_time))
+        # else:
+        #     print(sum(total_time) / 1000)
         print(sum(predict_time_list) / 1000 / 1000)
         tmp_res.append(sum(predict_time_list) / 1000 / 1000)
 
-        # 保存各个kernel的延迟预测结果
-        # kernel_predict_details = "kernel_details_gpu{}.csv".format(gpu_resource)
-        # with open(kernel_predict_details, mode="w", encoding="utf-8-sig", newline="") as f:
-        #     writer = csv.writer(f)
-        #     for row in predict_time_list:
-        #         writer.writerow([row])
-
     final_res.append(tmp_res[:])
 
-
-
-
-
+print(final_res)
 predict_res_csv = "predict.csv"
 with open(predict_res_csv, mode="w", encoding="utf-8-sig", newline="") as f:
     writer = csv.writer(f)
-    lines = [[] for i in range(5)]
+    lines = [[] for i in range(len(final_res[0]))]
     for i in range(len(final_res[0])):
         lines[i].append(final_res[0][i])
         lines[i].append(final_res[1][i])
