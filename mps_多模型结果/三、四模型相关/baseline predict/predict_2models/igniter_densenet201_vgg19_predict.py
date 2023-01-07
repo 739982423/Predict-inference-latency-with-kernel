@@ -65,6 +65,10 @@ print(predict_res_hash)
 MAE1 = 0
 MAE2 = 0
 n = 0
+
+# 用一个list保存所有预测结果的误差
+errors = []
+
 with open(real_test_res_csv, mode="r", encoding="utf-8-sig") as f:
     reader = csv.reader(f)
     for row in reader:
@@ -103,10 +107,12 @@ with open(real_test_res_csv, mode="r", encoding="utf-8-sig") as f:
         print("predict m1:{}, real m1:{}".format(predict_m1_latency, m1_real_latency))
         print("预测百分比增长 m1:{}, 真实百分比增长 m1:{}".format(predict_m1_latency_increase, m1_latency_increase))
         MAE1 += abs(predict_m1_latency_increase - m1_latency_increase)
+        errors.append(abs(predict_m1_latency_increase - m1_latency_increase))
 
         print("predict m2:{}, real m2:{}".format(predict_m2_latency, m2_real_latency))
         print("预测百分比增长 m2:{}, 真实百分比增长 m2:{}".format(predict_m2_latency_increase, m2_latency_increase))
         MAE2 += abs(predict_m2_latency_increase - m2_latency_increase)
+        errors.append(abs(predict_m2_latency_increase - m2_latency_increase))
 
         n += 1
 print("--------------------------------------")
@@ -114,3 +120,8 @@ print(n)
 print("MAE1 = {}".format(MAE1 / n))
 print("MAE2 = {}".format(MAE2 / n))
 
+errors_result_file = "./errors2.csv"
+with open(errors_result_file, mode="w", encoding="utf-8", newline="") as f:
+    writer = csv.writer(f)
+    for error in errors:
+        writer.writerow([error])

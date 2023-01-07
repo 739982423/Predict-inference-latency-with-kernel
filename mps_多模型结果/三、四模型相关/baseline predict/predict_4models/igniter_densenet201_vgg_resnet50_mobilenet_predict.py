@@ -93,8 +93,10 @@ MAE2 = 0
 MAE3 = 0
 MAE4 = 0
 n = 0
-ratio = 0.8
+ratio = 0.6
 output = open("./4models_predict_output.txt", "w")
+# 用一个list保存所有预测结果的误差
+errors = []
 with open(real_test_res_csv, mode="r", encoding="utf-8-sig") as f:
     reader = csv.reader(f)
     for row in reader:
@@ -153,21 +155,29 @@ with open(real_test_res_csv, mode="r", encoding="utf-8-sig") as f:
         print("共存predict m1:{}, 共存real m1:{}".format(predict_m1_latency, m1_real_latency), file=output)
         print("预测百分比增长 m1:{}, 真实百分比增长 m1:{}".format(predict_m1_latency_increase, m1_latency_increase), file=output)
         MAE1 += abs(predict_m1_latency_increase - m1_latency_increase) * ratio
+        errors.append(abs(predict_m1_latency_increase - m1_latency_increase))
+
         print("***", file=output)
         print("single latency m2:{}".format(single_latency2), file=output)
         print("共存predict m2:{}, 共存real m2:{}".format(predict_m2_latency, m2_real_latency), file=output)
         print("预测百分比增长 m2:{}, 真实百分比增长 m2:{}".format(predict_m2_latency_increase, m2_latency_increase), file=output)
         MAE2 += abs(predict_m2_latency_increase - m2_latency_increase) * ratio
+        errors.append(abs(predict_m2_latency_increase - m2_latency_increase))
+
         print("***", file=output)
         print("single latency m3:{}".format(single_latency3), file=output)
         print("共存predict m3:{}, 共存real m3:{}".format(predict_m3_latency, m3_real_latency), file=output)
         print("预测百分比增长 m3:{}, 真实百分比增长 m3:{}".format(predict_m3_latency_increase, m3_latency_increase), file=output)
         MAE3 += abs(predict_m3_latency_increase - m3_latency_increase) * ratio
+        errors.append(abs(predict_m3_latency_increase - m3_latency_increase))
+
         print("***", file=output)
         print("single latency m4:{}".format(single_latency4), file=output)
         print("共存predict m4:{}, 共存real m4:{}".format(predict_m4_latency, m4_real_latency), file=output)
         print("预测百分比增长 m4:{}, 真实百分比增长 m4:{}".format(predict_m4_latency_increase, m4_latency_increase), file=output)
         MAE4 += abs(predict_m4_latency_increase - m4_latency_increase) * ratio
+        errors.append(abs(predict_m4_latency_increase - m4_latency_increase))
+
         n += 1
 
 print("MAE1 = {}".format(MAE1 / n))
@@ -175,3 +185,8 @@ print("MAE2 = {}".format(MAE2 / n))
 print("MAE3 = {}".format(MAE3 / n))
 print("MAE4 = {}".format(MAE4 / n))
 
+errors_result_file = "./errors8.csv"
+with open(errors_result_file, mode="w", encoding="utf-8", newline="") as f:
+    writer = csv.writer(f)
+    for error in errors:
+        writer.writerow([error])

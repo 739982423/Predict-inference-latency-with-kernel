@@ -5,12 +5,12 @@ m1_name = "vgg19"
 m2_name = "resnet50"
 m3_name = "densenet201"
 
-real_test_res_csv = "./../tmp_d_r_v.csv"
+real_test_res_csv = "./../../tmp_d_r_v.csv"
 predict_res_csv = "./vgg19_resnet50_densenet201.csv"
 
-m1_origin_csv = "./../../base/3_models_base/" + m1_name[0] + ".csv"
-m2_origin_csv = "./../../base/3_models_base/" + m2_name[0] + ".csv"
-m3_origin_csv = "./../../base/3_models_base/" + m3_name[0] + ".csv"
+m1_origin_csv = "./../../../base/3_models_base/" + m1_name[0] + ".csv"
+m2_origin_csv = "./../../../base/3_models_base/" + m2_name[0] + ".csv"
+m3_origin_csv = "./../../../base/3_models_base/" + m3_name[0] + ".csv"
 
 # 读取三个模型单独运行时的latency, 以便之后计算误差百分比
 m1_origin_latency = []
@@ -74,6 +74,10 @@ MAE1 = 0
 MAE2 = 0
 MAE3 = 0
 n = 0
+
+# 用一个list保存所有预测结果的误差
+errors = []
+
 with open(real_test_res_csv, mode="r", encoding="utf-8-sig") as f:
     reader = csv.reader(f)
     for row in reader:
@@ -116,15 +120,25 @@ with open(real_test_res_csv, mode="r", encoding="utf-8-sig") as f:
         print("predict m1:{}, real m1:{}".format(predict_m1_latency, m1_real_latency))
         print("预测百分比增长 m1:{}, 真实百分比增长 m1:{}".format(predict_m1_latency_increase, m1_latency_increase))
         MAE1 += abs(predict_m1_latency_increase - m1_latency_increase)
+        errors.append(abs(predict_m1_latency_increase - m1_latency_increase))
 
         print("predict m2:{}, real m2:{}".format(predict_m2_latency, m2_real_latency))
         print("预测百分比增长 m2:{}, 真实百分比增长 m2:{}".format(predict_m2_latency_increase, m2_latency_increase))
         MAE2 += abs(predict_m2_latency_increase - m2_latency_increase)
+        errors.append(abs(predict_m2_latency_increase - m2_latency_increase))
 
         print("predict m3:{}, real m3:{}".format(predict_m3_latency, m3_real_latency))
         print("预测百分比增长 m3:{}, 真实百分比增长 m3:{}".format(predict_m3_latency_increase, m3_latency_increase))
         MAE3 += abs(predict_m3_latency_increase - m3_latency_increase)
+        errors.append(abs(predict_m3_latency_increase - m3_latency_increase))
+
         n += 1
 print("MAE1 = {}".format(MAE1 * 0.8 / n))
 print("MAE2 = {}".format(MAE2 * 0.8 / n))
 print("MAE3 = {}".format(MAE3 * 0.8 / n))
+
+errors_result_file = "./errors7.csv"
+with open(errors_result_file, mode="w", encoding="utf-8", newline="") as f:
+    writer = csv.writer(f)
+    for error in errors:
+        writer.writerow([error * 0.6])

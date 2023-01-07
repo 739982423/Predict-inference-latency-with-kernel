@@ -1,0 +1,50 @@
+kernel name,id,avg latency(us)
+cudnn::gemm::computeOffsetsKernel(cudnn::gemm::ComputeOffsetsParams),1,0.8871428571428592
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::BUnaryFunctor<at::native::AddFunctor<long>>, at::detail::Array<char *, (int)2>>(int, T2, T3)",2,1.2265065359477176
+"void at::native::<unnamed>::fused_dropout_kernel_vec<float, float, unsigned int, (int)1, (int)4>(at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<T1, T3>, at::cuda::detail::TensorInfo<unsigned char, T3>, T3, T2, at::PhiloxCudaState)",3,3.0985000000000005
+"void at::native::unrolled_elementwise_kernel<at::native::copy_device_to_device(at::TensorIterator &, bool)::[lambda() (instance 2)]::operator ()() const::[lambda() (instance 8)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>, OffsetCalculator<(int)1, unsigned int>, OffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithoutCast, at::native::memory::StoreWithoutCast>(int, T1, T2, T3, T4, T5, T6)",4,4.732555555555556
+"void scal_kernel<float, float, (int)1, (bool)0, (int)6, (int)5, (int)5, (int)3>(cublasTransposeParams<T2>, const T1 *, T1 *, const T2 *)",5,5.0
+"void splitKreduce_kernel<float, float, float>(cublasSplitKParams<T3>, const T1 *, const T2 *, T2 *, const T3 *, const T3 *)",6,5.739473684210527
+"void cudnn::winograd::generateWinogradTilesKernel<(int)0, float, float>(cudnn::winograd::GenerateWinogradTilesParams<T2, T3>)",7,12.895551401869163
+"void cudnn::winograd_nonfused::winogradForwardFilter4x4<float, float>(cudnn::winograd_nonfused::WinogradFilterParams<T1, T2>)",8,20.131572953736654
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::clamp_min_scalar_kernel_impl(at::TensorIterator &, c10::Scalar)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 8)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",9,53.37923694029853
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::<unnamed>::clamp_scalar_kernel_impl(at::TensorIterator &, c10::Scalar, c10::Scalar)::[lambda() (instance 1)]::operator ()() const::[lambda() (instance 8)]::operator ()() const::[lambda(float) (instance 1)], at::detail::Array<char *, (int)2>>(int, T2, T3)",10,54.13825714285714
+volta_sgemm_128x32_tn,11,60.0
+"void im2col4d_kernel<float, int>(im2col4d_params, cudnnConvolutionStruct, cudnnTensor4dStruct, const T1 *, T1 *, int)",12,64.83200000000001
+"void cudnn::detail::bn_fw_tr_1C11_singleread<float, (int)512, (bool)1, (int)1, (int)2, (int)0>(cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, const float *, const float *, float, float, float *, float *, float *, float *, float, float, cudnn::reduced_divisor, int, cudnn::reduced_divisor, cudnn::detail::bnFwPersistentState *, int, float, float, float, int, float, float, cudnnStatus_t *, bool)",13,69.23856102362221
+"void fft2d_c2r_32x32<float, (bool)0, (bool)0, (unsigned int)0, (bool)0, (bool)0>(T1 *, const float2 *, int, int, int, int, int, int, int, int, int, float, float, cudnn::reduced_divisor, bool, T1 *, T1 *, int2, int, int)",14,71.68539325842697
+"void cudnn::winograd_nonfused::winogradForwardOutput4x4<float, float>(cudnn::winograd_nonfused::WinogradOutputParams<T1, T2>)",15,77.25335231316726
+"void at::native::vectorized_elementwise_kernel<(int)4, at::native::AddFunctor<float>, at::detail::Array<char *, (int)3>>(int, T2, T3)",16,83.52132692307694
+"void at::native::reduce_kernel<(int)512, (int)1, at::native::ReduceOp<float, at::native::MeanOps<float, float>, unsigned int, float, (int)4>>(T3)",17,90.97
+"void at::native::<unnamed>::CatArrayBatchedCopy<float, unsigned int, (int)4, (int)128, (int)1>(T1 *, at::native::<unnamed>::CatArrInputTensorMetadata<T1, T2, T4, T5>, at::native::<unnamed>::TensorSizeStride<T2, (unsigned int)4>, int, T2)",18,101.4281785714286
+"void cudnn::winograd_nonfused::winogradForwardData4x4<float, float>(cudnn::winograd_nonfused::WinogradDataParams<T1, T2>)",19,116.37696085409252
+"void fft2d_c2r_32x32<float, (bool)1, (bool)0, (unsigned int)0, (bool)0, (bool)0>(T1 *, const float2 *, int, int, int, int, int, int, int, int, int, float, float, cudnn::reduced_divisor, bool, T1 *, T1 *, int2, int, int)",20,126.9874358974359
+"void at::native::<unnamed>::avg_pool2d_out_cuda_frame<float, float>(int, const T1 *, int, int, int, int, int, int, int, int, int, int, int, int, T1 *, int, bool, bool)",21,137.94599999999997
+"void fft2d_r2c_32x32<float, (bool)0, (unsigned int)0, (bool)0>(float2 *, const T1 *, int, int, int, int, int, int, int, int, int, cudnn::reduced_divisor, bool, int2, int, int)",22,167.20263888888888
+"void cudnn::detail::implicit_convolve_sgemm<float, float, (int)1024, (int)5, (int)5, (int)3, (int)3, (int)3, (int)1, (bool)1, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, T1 *, kernel_conv_params, int, float, float, int, T2 *, T2 *, int, int)",23,189.9630788643533
+"void sgemm_largek_lds64<(bool)1, (bool)0, (int)6, (int)3, (int)4, (int)5, (int)2, (int)66>(float *, const float *, const float *, int, int, int, int, int, int, const float *, const float *, float, float, int, int, int *, int *)",24,195.0
+volta_scudnn_128x32_relu_small_nn_v1,25,203.78759999999994
+"void cudnn::detail::bn_fw_tr_1C11_kernel_NCHW<float, float, (int)512, (bool)1, (int)1>(cudnnTensorStruct, const T1 *, cudnnTensorStruct, T1 *, const T2 *, const T2 *, T2, T2, T2 *, T2 *, T2 *, T2 *, T2, T2)",26,215.84236538461542
+"void fft2d_r2c_32x32<float, (bool)0, (unsigned int)1, (bool)1>(float2 *, const T1 *, int, int, int, int, int, int, int, int, int, cudnn::reduced_divisor, bool, int2, int, int)",27,240.29327272727275
+"void gemv2T_kernel_val<int, int, float, float, float, (int)128, (int)16, (int)4, (int)4, (bool)0, cublasGemvParams<cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>, float>>(T11, T5, T5)",28,258.56366666666673
+"void spatialDepthwiseConvolutionUpdateOutput<float, float, unsigned int, (int)3>(THCDeviceTensor<T1, (int)4, int, DefaultPtrTraits>, THCDeviceTensor<T1, (int)4, int, DefaultPtrTraits>, THCDeviceTensor<T1, (int)4, int, DefaultPtrTraits>, THCDeviceTensor<T1, (int)1, int, DefaultPtrTraits>, bool, T3, int, int, int, int, int, int, int, int, int, int, int, int, int, int)",29,279.12570588235275
+"void at::native::<unnamed>::adaptive_average_pool<float>(T1 *, T1 *, int, int, int, int, long, long, long)",30,286.64
+volta_sgemm_128x64_nn,31,310.8512599049128
+volta_sgemm_64x32_sliced1x4_tn,32,324.23699999999997
+volta_sgemm_128x32_nn,33,333.59222222222223
+"void cudnn::detail::explicit_convolve_sgemm<float, int, (int)128, (int)5, (int)5, (int)3, (int)3, (int)3, (int)0, (bool)1>(int, int, int, const T1 *, int, const T1 *, int, T1 *, kernel_conv_params, int, int, float, float, int, T1 *, T1 *)",34,373.236
+volta_gcgemm_32x32_nt,35,376.06722727272734
+"void cudnn::detail::implicit_convolve_sgemm<float, float, (int)128, (int)6, (int)7, (int)3, (int)3, (int)5, (int)1, (bool)1, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, T1 *, kernel_conv_params, int, float, float, int, T2 *, T2 *, int, int)",36,391.8818518518519
+volta_scudnn_128x64_relu_interior_nn_v1,37,485.28284558823526
+"void at::native::<unnamed>::max_pool_forward_nchw<float, float>(int, const T1 *, int, int, int, int, int, int, int, int, int, int, int, int, int, int, T1 *, long *)",38,518.1850714285713
+volta_scudnn_128x32_relu_interior_nn_v1,39,518.5079310344827
+"void at::native::unrolled_elementwise_kernel<at::native::AddFunctor<float>, at::detail::Array<char *, (int)3>, OffsetCalculator<(int)2, unsigned int>, OffsetCalculator<(int)1, unsigned int>, at::native::memory::LoadWithoutCast, at::native::memory::StoreWithoutCast>(int, T1, T2, T3, T4, T5, T6)",40,520.5782812499999
+volta_scudnn_winograd_128x128_ldg1_ldg4_relu_tile148t_nt_v1,41,524.9465233644859
+"void gemmSN_TN_kernel<float, (int)128, (int)16, (int)2, (int)4, (int)8, (int)9, (bool)0, cublasGemvTensorStridedBatched<const float>, cublasGemvTensorStridedBatched<float>>(cublasGemmSmallNParams<T9, T10, T1>)",42,668.3333333333334
+volta_sgemm_128x32_sliced1x4_tn,43,894.382
+volta_scudnn_128x128_relu_interior_nn_v1,44,903.1328095238096
+volta_scudnn_128x64_relu_medium_nn_v1,45,1255.17525
+volta_scudnn_128x128_relu_small_nn_v1,46,1680.5773333333336
+volta_scudnn_128x64_relu_small_nn_v1,47,2057.9339999999997
+"void cudnn::detail::implicit_convolve_sgemm<float, float, (int)512, (int)6, (int)8, (int)3, (int)3, (int)5, (int)1, (bool)1, (bool)0, (bool)1>(int, int, int, const T1 *, int, T2 *, T1 *, kernel_conv_params, int, float, float, int, T2 *, T2 *, int, int)",48,2858.0
+volta_sgemm_128x128_nn,49,8684.044943820225

@@ -90,6 +90,8 @@ for idx1, gpu in enumerate(gpu_resource):
                 if row[0] == model_name and row[1] == compared_gpu and row[2] == compared_bs:
                     # print(row)
                     influenced_percent = float(row[6]) * 100
+                    if influenced_percent > 70:
+                        continue
                     # x = float(row[35]) / 1000 / 10000
                     x = (float(row[35]) + float(row[38])) / 1000 / 10000
                     x_data1.append(x)
@@ -138,6 +140,8 @@ for idx1, gpu in enumerate(gpu_resource):
                     continue
                 if row[0] == model_name and row[1] == compared_gpu and row[2] == compared_bs:
                     influenced_percent = float(row[6]) * 100
+                    if influenced_percent > 70:
+                        continue
                     # x = float(row[35]) / 1000 / 10000
                     x = (float(row[35]) + float(row[38])) / 1000 / 10000
                     x_data1.append(x)
@@ -188,6 +192,8 @@ for idx1, gpu in enumerate(gpu_resource):
                     continue
                 if row[0] == model_name and row[1] == compared_gpu and row[2] == compared_bs:
                     influenced_percent = float(row[6]) * 100
+                    if influenced_percent > 70:
+                        continue
                     # x = float(row[35]) / 1000 / 10000
                     x = (float(row[35]) + float(row[38])) / 1000 / 10000
                     x_data1.append(x)
@@ -240,16 +246,38 @@ for idx1, gpu in enumerate(gpu_resource):
         # plt.plot(x_data2, y_data2, 'o', color = 'tomato')
         # plt.plot(x_data3, y_data3, 'o', color = 'blue')
         # plt.show()
+plt.rcParams['grid.color'] = (0.5, 0.5, 0.5, 0.3)
 
 ax = plt.axes(projection='3d')
-ax.scatter3D(np.array(res_3d_x_g10), np.array(res_3d_y_g10), np.array(res_3d_z_g10), color = "green", label = "g10")
-ax.scatter3D(np.array(res_3d_x_g25), np.array(res_3d_y_g25), np.array(res_3d_z_g25), color = "orange", label = "g25")
-ax.scatter3D(np.array(res_3d_x_g50), np.array(res_3d_y_g50), np.array(res_3d_z_g50), color = "red", label = "g50")
-ax.scatter3D(np.array(res_3d_x_g75), np.array(res_3d_y_g75), np.array(res_3d_z_g75), color = "blue", label = "g75")
+ax.xaxis._axinfo["grid"]['linestyle'] = "--"
+ax.yaxis._axinfo["grid"]['linestyle'] = "--"
+ax.zaxis._axinfo["grid"]['linestyle'] = "--"
+print(len(res_3d_x_g10), len(res_3d_y_g10), len(res_3d_z_g10))
+ax.scatter3D(np.array(res_3d_y_g10), np.array(res_3d_x_g10), np.array(res_3d_z_g10), s=25, marker='*',color = "green", label = "g10")
+ax.scatter3D(np.array(res_3d_y_g25), np.array(res_3d_x_g25), np.array(res_3d_z_g25), s=25, marker='x',color = "orange", label = "g25")
+ax.scatter3D(np.array(res_3d_y_g50), np.array(res_3d_x_g50), np.array(res_3d_z_g50), s=25, marker='+',color = "red", label = "g50")
+ax.scatter3D(np.array(res_3d_y_g75), np.array(res_3d_x_g75), np.array(res_3d_z_g75), s=40, marker='3',color = "blue", label = "g75")
 # ax.set_title('3d Scatter plot')
-plt.gca().invert_xaxis()
-plt.xlabel("m1 Data amount")
-plt.ylabel("m2 Data amount")
+
+# ax.grid(b = True, color ='grey',
+# 		linestyle ='-.', linewidth = 0.3,
+# 		alpha = 0.5)
+
+# ax.xaxis._axinfo["alpha"] = 0
+# ax.yaxis._axinfo["alpha"] = 0
+# ax.zaxis._axinfo["alpha"] = 0
+
+ax.set_xlabel("W data exchanged")
+ax.set_ylabel("Other workloads data exchanged")
+ax.set_zlabel("Latency growth(%)")
+ax.set_zlim3d(0, 60)
+ax.set_xlim3d(60, 0)
+ax.grid(alpha= 100, linestyle='-.')
+# plt.gca().invert_xaxis()
+# plt.xlabel("Other workloads Total amount of data exchanged")
+# plt.ylabel("W Total amount of data exchanged")
+plt.yticks([0, 150, 300, 450, 600, 750])
+# plt.xticks([60, 40, 20, 0])
 plt.legend()
 plt.show()
 # plt.plot([10, 25, 50, 75], [res[0][0], res[1][0], res[2][0], res[3][0]], 'o',label = "b1")

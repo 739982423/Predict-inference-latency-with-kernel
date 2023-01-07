@@ -2,46 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65d86ad7-e92e-41cb-a5ec-564dc78d9fd5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/raw/get_kernel/plot_patent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/filter.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/cycles_accycles_ratio_sm_usage_fit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_densenet201_b32_g100.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_densenet201_b32_g100.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_densenet201_b32_g50.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_densenet201_b32_g50.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_densenet201_b32_g75.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_densenet201_b32_g75.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_mobilenet_b8_g75.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_mobilenet_b8_g75.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_resnet50_b16_g25.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_resnet50_b16_g25.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_resnet50_b32_g100.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_resnet50_b32_g100.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_resnet50_b32_g50.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/filtered_raw_resnet50_b32_g50.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/get_kernel_gpu_speed.py" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/get_kernel_gpu_speed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/get_kernel_ins_speed.py" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/get_kernel_ins_speed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/get_kernel_sm_usage.py" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/get_kernel_sm_usage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/get_kernel_totalcycles_activecycles.py" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/get_kernel_totalcycles_activecycles.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/get_memory_message.py" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/get_memory_message.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/hit_rate_message.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/get_kernel/hit_rate_message.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/kernel_data.rar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/kernel_fit1.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/kernel_nums_count.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/test1.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/test2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/get_kernel/test3.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/predict/idle_time_fit.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/predict/kernel_actcycles_cycles_map2.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/predict/kernel_actcycles_cycles_map2.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/predict/kernel_gpu_speed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/predict/kernel_gpu_speed.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/predict/kernel_ins_speed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/predict/kernel_ins_speed.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/predict/kernel_sm_usage.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/predict/kernel_sm_usage.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/predict/predict.csv" beforeDir="false" afterPath="$PROJECT_DIR$/raw/predict/predict.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/raw/predict/predict_with_kernel.py" beforeDir="false" afterPath="$PROJECT_DIR$/raw/predict/predict_with_kernel.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resnet50_b1_g100_namesorted.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resnet50_b1_g100_namesorted_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resnet50_b8_g100_namesorted.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resnet50_b8_g100_namesorted_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vgg19_b1_g100_namesorted.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vgg19_b1_g100_namesorted_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vgg19_b8_g100_namesorted.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vgg19_b8_g100_namesorted_2.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../mps_多模型结果/两模型相关/l2_read_write_sectors_plot.py" beforeDir="false" afterPath="$PROJECT_DIR$/../mps_多模型结果/两模型相关/l2_read_write_sectors_plot.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,25 +175,25 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1660984206188" />
-    <state width="1515" height="207" key="GridCell.Tab.0.bottom" timestamp="1665478939829">
+    <state width="1515" height="207" key="GridCell.Tab.0.bottom" timestamp="1665479707370">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1665478939829" />
-    <state width="1515" height="207" key="GridCell.Tab.0.center" timestamp="1665478939829">
+    <state width="1515" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1665479707370" />
+    <state width="1515" height="207" key="GridCell.Tab.0.center" timestamp="1665479707370">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1665478939829" />
-    <state width="1515" height="207" key="GridCell.Tab.0.left" timestamp="1665478939829">
+    <state width="1515" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1665479707370" />
+    <state width="1515" height="207" key="GridCell.Tab.0.left" timestamp="1665479707370">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1665478939829" />
-    <state width="1515" height="207" key="GridCell.Tab.0.right" timestamp="1665478939829">
+    <state width="1515" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1665479707370" />
+    <state width="1515" height="207" key="GridCell.Tab.0.right" timestamp="1665479707370">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1515" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1665478939829" />
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1665475503212">
+    <state width="1515" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1665479707370" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1666932090858">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1665475503212" />
+    <state x="449" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1666932090858" />
   </component>
 </project>
