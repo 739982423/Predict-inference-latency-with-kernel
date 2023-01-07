@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="VcsDirectoryMappings">
-    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/DRL_demo/reinforcement-learning-code" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/my/DQN/神经网络相关练习/pytorch-A3C" vcs="Git" />
-  </component>
-</project>
